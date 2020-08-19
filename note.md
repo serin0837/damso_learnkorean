@@ -1,0 +1,1 @@
+- scroll-behavior: when you click a it move smoothly compared with auto

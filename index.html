@@ -14,30 +14,24 @@
     />
 
     <!--font-->
+
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
 
     <!--style-->
     <link rel="stylesheet" href="style.css" />
-    <!--bootstrap-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
 
     <title>Learn Korean with Damso</title>
     <!--favicon -->
     <link rel="icon" href="" />
   </head>
-  <body>
+  <body class="body">
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Damso</a>
-        <button
+      <nav id="navbar" class="nav">
+        <a class="navbar-brand" href="#"><img src="./img/damso.jpg" /></a>
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -47,21 +41,22 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
+          <ul class="nav-list">
+            <li>
               <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
+                >Home <span class="sr-only"></span
+              ></a>
             </li>
-            <li class="nav-item">
+            <li>
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a class="nav-link" href="#reviews">Reviews</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -69,15 +64,19 @@
       </nav>
     </header>
 
-    <section>
+    <section id="welcome-section" class="welcome-section">
       <div>
-        <h1>Serin Jeon</h1>
-        <p>Best Korean teacher</p>
+        <img src="./img/serin-image.jpg" alt="serin image" />
       </div>
+
       <div>
-        <img src="" alt="serin's image" />
+        <h1>Learn Korean with Serin</h1>
+        <p>
+          Fun and Engaging Native Korean teacher based in Manchester
+        </p>
       </div>
     </section>
+
     <main>
       <section id="about">
         <h2>About</h2>
@@ -95,6 +94,7 @@
             continue to progress at the moment. I love seeing this progressing!
           </p>
         </article>
+
         <article>
           <p>Methodology</p>
           <p>
@@ -113,15 +113,21 @@
         </article>
       </section>
     </main>
-    <section id="reviews">
-      <h3>Reviews</h3>
-      <p>
-        Check my reviews!
-        <img />
-      </p>
+
+    <section id="projects" class="projects-sections">
+      <h3 class="projects-section-header">Reviews</h3>
+      <div class="projects-grid">
+        <img class="project-image" src="" alt="review image" />
+        <img class="project-image" src="" alt="review image" />
+        <img class="project-image" src="" alt="review image" />
+        <img class="project-image" src="" alt="review image" />
+        <img class="project-image" src="" alt="review image" />
+      </div>
     </section>
-    <section id="contact">
+
+    <section id="contact" class="contact-section">
       <h3>Contact</h3>
+      <p>If you want lesson with me, please contact me!</p>
       <form>
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
@@ -135,7 +141,16 @@
         <button type="button" class="btn btn-primary">Primary</button>
       </form>
     </section>
-    <footer></footer>
+    <footer>
+      <div class="social">
+        <a href="#" target="_blank" class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i>Facebook</a
+        >
+        <a href="#" target="_blank" class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i>Instagram</a
+        >
+      </div>
+    </footer>
 
     <!--bootstrap for JS-->
     <script
