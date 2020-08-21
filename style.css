@@ -6,10 +6,7 @@
 /* not working */
 
 :root {
-  --main-white: #f0f0f0;
-  --main-purple: #7231b2;
   --main-logo: #a346ff;
-  --main-gray: #fcf9ff;
 }
 
 * {
@@ -175,7 +172,7 @@ ul {
 }
 .projects-section-header {
   max-width: 640px;
-  margin: 0 auto 6rem auto;
+  margin: 6rem auto 6rem auto;
 }
 
 .projects-grid {
@@ -204,4 +201,62 @@ ul {
   height: 80vh;
   padding: 0 2rem;
   background-color: plum;
+}
+
+.contact-section h3 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.contact-section input {
+  margin: 2rem;
+  padding: 1rem;
+  border: var(--main-logo);
+  border-radius: 5px;
+  width: 60vh;
+}
+
+.contact-section textarea {
+  margin: 2rem;
+  padding: 1rem;
+  border: var(--main-logo);
+  border-radius: 5px;
+  height: 10rem;
+  width: 60vh;
+}
+
+.contact-section button {
+  background-color: var(--main-logo);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 100%;
+  background-color: lightgray;
+  height: 10vh;
+}
+
+footer p {
+  margin: 2rem;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 2rem;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  color: var(--main-logo);
 }
