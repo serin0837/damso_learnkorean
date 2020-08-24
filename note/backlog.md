@@ -17,3 +17,8 @@
 
 - add css with contact and footer
 - responsive need to work!!! and add review image
+
+## 24/08/20
+
+- added review image / need to make responsive!!!
+- is it possible to use npm package to open my website?
