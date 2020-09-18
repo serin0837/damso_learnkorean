@@ -1,6 +1,7 @@
 # My first website
 
-This website is profile website to teach Korean
+This website is profile website to teach Korean.
+(still working on)
 
 # install
 

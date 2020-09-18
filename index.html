@@ -32,41 +32,42 @@
     <link rel="icon" href="" />
   </head>
   <body class="body">
-    <header>
-      <nav id="navbar" class="nav">
-        <a class="navbar-brand" href="#"><img src="./img/damso.jpg" /></a>
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
+    <header id="navbar">
+      <nav class="nav navbar-container container">
+        <a class="home-link" href="/"
+          ><div class="navbar-logo"><img src="./img/damso.jpg" /></div
+        ></a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav-list">
-            <li>
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only"></span
-              ></a>
+        <button
+          class="navbar-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="navbar-menu">
+          <ul class="navbar-links">
+            <li class="navbar-item">
+              <a class="navbar-link" href="/">Home </a>
             </li>
-            <li>
-              <a class="nav-link" href="#about">About</a>
+
+            <li class="navbar-item">
+              <a class="navbar-link" href="#about">About</a>
             </li>
-            <li>
-              <a class="nav-link" href="#reviews">Reviews</a>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#reviews">Reviews</a>
             </li>
-            <li>
-              <a class="nav-link" href="#contact">Contact</a>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <script src="index.js"></script>
 
     <section id="welcome-section" class="welcome-section">
       <div>
@@ -75,9 +76,7 @@
 
       <div>
         <h1>Learn Korean with Serin</h1>
-        <p>
-          Fun and Engaging Native Korean teacher based in Manchester
-        </p>
+        <p>Fun and Engaging Native Korean teacher based in Manchester</p>
       </div>
     </section>
 
@@ -129,9 +128,27 @@
     <section id="reviews" class="projects-sections">
       <h2 class="projects-section-header">Reviews</h2>
       <p>reviews from Superprof</p>
-      <div class="projects-grid">
-        <img class="project-image" src="./img/review2.PNG" alt="review image" />
-        <img class="project-image" src="./img/review3.PNG" alt="review image" />
+      <div class="projects-grid" id="projects">
+        <p class="project-title">
+          title1
+          <a
+            href="https://github.com/serin0837"
+            id="profile-link"
+            target="_blank"
+            ><img
+              class="project-image"
+              src="./img/review2.PNG"
+              alt="review image"
+          /></a>
+        </p>
+        <p class="project-title">
+          title2
+          <img
+            class="project-image"
+            src="./img/review3.PNG"
+            alt="review image"
+          />
+        </p>
         <img class="project-image" src="./img/review4.PNG" alt="review image" />
         <img class="project-image" src="./img/review5.PNG" alt="review image" />
         <img class="project-image" src="./img/review6.PNG" alt="review image" />
@@ -160,9 +177,7 @@
               required
             ></textarea>
           </div>
-          <button class="btn" hef="#" type="submit">
-            Email me
-          </button>
+          <button class="btn" hef="#" type="submit">Email me</button>
         </form>
       </div>
     </section>
