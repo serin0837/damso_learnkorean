@@ -424,3 +424,7 @@ footer p {
 .fa:hover {
   color: var(--main-logo);
 }
+
+.info {
+  color: red;
+}
