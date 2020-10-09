@@ -1,10 +1,7 @@
-# My first website
+## My very first website
 
 This website is profile website to teach Korean.
-(still working on)
 
-# install
+# Live
 
-1. `git clone https://github.com/serin0837/damso_learnkorean.git`
-
-2. Go to live server with your local machine.
+🌸[Webpage] https://damsolearnkorean.netlify.app/
