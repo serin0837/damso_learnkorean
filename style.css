@@ -283,6 +283,7 @@ ul {
   border-radius: 50%;
   height: 200px;
   width: auto;
+  margin-top: 3.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -306,7 +307,9 @@ ul {
 
 .about-section h2 {
   color: white;
-  margin-top: 5rem;
+  max-width: 640px;
+  margin: 5rem auto 5rem auto;
+  padding-top: 5rem;
 }
 
 .about-section h3 {
@@ -316,7 +319,9 @@ ul {
   padding: 2rem;
   margin: 0 10vh;
 }
-
+.about-section div {
+  padding-bottom: 5rem;
+}
 @media screen and (max-width: 500px) {
   .about-section p {
     margin: 0 2rem;
@@ -363,7 +368,7 @@ ul {
 }
 
 .contact-section h3 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin: 5rem auto 5rem auto;
   color: white;
 }
@@ -401,11 +406,11 @@ ul {
 
 footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 2rem;
-  width: 100%;
   background-color: lightgray;
-  height: 10vh;
 }
 
 footer p {
@@ -413,9 +418,8 @@ footer p {
 }
 
 .fa {
-  padding: 20px;
   font-size: 2rem;
-  width: 50px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
