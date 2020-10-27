@@ -7,6 +7,7 @@
 
 :root {
   --main-logo: #a346ff;
+  --complementary: #a2ff46;
 }
 
 * {
@@ -84,7 +85,6 @@ ul {
 }
 
 .container {
-  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -265,7 +265,7 @@ ul {
   align-items: center;
   width: 100%;
   height: 100vh;
-  color: gray;
+  color: var(--main-logo);
   margin-top: 5rem;
 }
 
@@ -273,9 +273,9 @@ ul {
 
 .welcome-section p {
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 400;
   font-style: italic;
-  color: var(--main-logo);
+  color: black;
   margin: 5rem;
 }
 
@@ -302,11 +302,11 @@ ul {
 .about-section {
   width: 100%;
   height: 100%;
-  background-color: pink;
+  background-color: #e2ffc6;
 }
 
 .about-section h2 {
-  color: white;
+  color: black;
   max-width: 640px;
   margin: 5rem auto 5rem auto;
   padding-top: 5rem;
@@ -364,13 +364,13 @@ ul {
   text-align: center;
   width: 100%;
   height: 100%;
-  background-color: plum;
+  background-color: #bea3f6;
 }
 
 .contact-section h3 {
   font-size: 4rem;
   margin: 5rem auto 5rem auto;
-  color: white;
+  color: black;
 }
 .contact-section .btn {
   margin-bottom: 3rem;
@@ -384,6 +384,10 @@ ul {
   width: 30rem;
 }
 
+.contact-section label {
+  visibility: hidden;
+}
+
 .contact-section textarea {
   margin: 2rem;
   padding: 1rem;
@@ -391,17 +395,20 @@ ul {
   border-radius: 5px;
   height: 10rem;
   width: 30rem;
-  font-style: inherit;
+  font: "Open Sans";
 }
 
 .contact-section button {
-  background-color: var(--main-logo);
-  color: white;
+  background-color: #a2ff46;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   float: right;
+}
+
+.contact-section button:hover {
+  opacity: 0.9;
 }
 
 footer {
@@ -426,9 +433,38 @@ footer p {
 }
 
 .fa:hover {
-  color: var(--main-logo);
+  color: var(--complementary);
+}
+/* add email func */
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
-.info {
-  color: red;
+#status.success {
+  background-color: greenyellow;
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: red;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: all;
+  }
 }

@@ -35,7 +35,7 @@
     <header id="navbar">
       <nav class="nav navbar-container container">
         <a class="home-link" href="/"
-          ><div class="navbar-logo"><img src="./img/damso.jpg" /></div
+          ><div class="navbar-logo"><img src="./img/damso.jpg" alt="damso logo"/></div
         ></a>
 
         <button
@@ -71,7 +71,7 @@
 
     <section class="welcome welcome-section">
       <div>
-        <img src="./img/serin-image.jpg" alt="serin image" />
+        <img src="./img/serin-image.jpg" alt="serin-profile-image" />
       </div>
 
       <div>
@@ -152,22 +152,32 @@
       <div class="contact-form">
         <form>
           <div>
-            <input type="text" name="name" placeholder="Name" required />
+            
+            <input type="text" name="name" placeholder="Name" id="name" required />
+            <br>
+            <label for="name" >Name</label>
           </div>
           <div>
-            <input type="email" name="email" placeholder="Email" required />
+            
+            <input type="email" name="email" id="email"placeholder="Your Email" required />
+            <br>
+            <label for="email">Email</label>
           </div>
           <div>
+            
             <textarea
               name="message"
               id="message"
               placeholder="Message"
               required
             ></textarea>
+            <br>
+            <label for="message">Message</label>
           </div>
           <button class="btn" hef="#" type="submit">Email me</button>
         </form>
       </div>
+      <div id="status" class="error">Success</div>
     </section>
 
     <footer class="footer">
@@ -180,7 +190,7 @@
         ></a>
       </div>
       <div class="copy-right">
-        <p>Damso &copy;All Rights Reserved</p>
+        <p>© 2020. Serin Jeon - all rights reserved</p>
       </div>
     </footer>
   </body>
