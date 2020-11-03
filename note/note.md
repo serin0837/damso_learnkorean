@@ -6,3 +6,10 @@
 
 - 10.09
   try to deploy with netlify just with click it's done!!
+
+## firebase
+
+create project with name damsoform
+
+traverse youtube <connectiong  firebase to a contact form >
+working!!

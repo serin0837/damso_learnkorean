@@ -67,7 +67,7 @@
         </div>
       </nav>
     </header>
-    <script src="index.js"></script>
+ 
 
     <section class="welcome welcome-section">
       <div>
@@ -88,13 +88,13 @@
             <h3><i>About me</i></h3>
             <p>
               Hello! I am a Korean national living in Manchester. I am
-              originally from Busan, and lived there for 25 years. I decided to
+              originally from Busan and lived there for 25 years. I decided to
               move to England and I have been here since March 2019 and l love
               living in England.
               <br />I have experience in teaching and mentoring foreign exchange
               students whilst studying for my undergraduate degree in Korea. I
               taught students from Japan, Vietnam, Norway, Malaysia, Sweden and
-              China. I have 10 regular students who continue to progress at the
+              China. I have a lot of students who study with me to progress at the
               moment. I love seeing this progressing!
             </p>
           </article>
@@ -145,14 +145,13 @@
 
     <section id="contact" class="contact contact-section">
       <div><h3>Contact</h3></div>
+     
       <div>
-        <p>If you want lesson with me, please contact me!</p>
-        <p class="info">not working yet</p>
+        <p>If you want a lesson with me, please contact me! I will be right back with you.😊</p>
       </div>
       <div class="contact-form">
-        <form>
-          <div>
-            
+        <form id="contactForm">
+          <div>            
             <input type="text" name="name" placeholder="Name" id="name" required />
             <br>
             <label for="name" >Name</label>
@@ -174,10 +173,11 @@
             <br>
             <label for="message">Message</label>
           </div>
+           <div class="alert">Your message has been sent.</div>
           <button class="btn" hef="#" type="submit">Email me</button>
         </form>
       </div>
-      <div id="status" class="error">Success</div>
+
     </section>
 
     <footer class="footer">
@@ -193,5 +193,27 @@
         <p>© 2020. Serin Jeon - all rights reserved</p>
       </div>
     </footer>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!--function error so add this-->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBJIIx2fH_3N4lOHNGnSSFnPXY5-zUBmOg",
+        authDomain: "damsoform.firebaseapp.com",
+        databaseURL: "https://damsoform.firebaseio.com",
+        projectId: "damsoform",
+        storageBucket: "damsoform.appspot.com",
+        messagingSenderId: "412293423484",
+        appId: "1:412293423484:web:7b6c9276b3ef7bcb9384f9"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="index.js"></script>
   </body>
 </html>
