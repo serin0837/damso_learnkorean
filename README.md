@@ -1,7 +1,11 @@
-## My very first website
+## Description
 
-This website is profile website to teach Korean.
+A single web page about my Korean tutoring.
+This webpage is my first webpage after I learned about HTML, CSS and JavaScript.
 
-# Live
+I also implemented Firebase DB to receive email information from users.
 
-🌸[Webpage] https://damsolearnkorean.netlify.app/
+# Technologies
+
+- Frontend : HTML, CSS, JavaScript, FirebaseDB
+  - [🔗Live](https://damsolearnkorean.netlify.app/)
